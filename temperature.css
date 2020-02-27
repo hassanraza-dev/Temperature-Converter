@@ -1,0 +1,59 @@
+body
+{
+    background-color: tomato;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px;
+    padding: 0px;
+
+}
+.header
+{
+    background-color:navy;
+}
+
+h1
+{
+    text-align: center;
+    font-family: sans-serif;
+    color: white;
+    font-size: 55px;
+    margin-top: 90px;
+}
+
+input
+{
+    width: 350px;
+    height: 33px;
+    font-size: 32px;
+    border-radius: 50px;
+    padding: 7px;
+    border: none;
+}
+button
+{
+  height: 45px;
+  width: 150px;
+  background: none;
+  margin-top: 30px;
+  border-radius: 30px;
+  border: navy 2px solid;
+  color: navy;
+  font-size: 20px;
+  transition: 0.4s;
+}
+button:hover
+{
+  background-color: navy;
+  color: white;
+}
+.result
+{
+  background-color: navy;
+   width: 350px;
+    font-size: 32px;
+    border-radius: 50px;
+  padding: 1px;
+    color: white;
+    margin-top: 30px;
+}

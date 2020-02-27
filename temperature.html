@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./temperature.css" type="text/css">
+    <title>Document</title>
+</head>
+<body>
+  <div class="header">
+<h1>Temperature Converter</h1>
+</div>
+<center>
+  <input type="number" id="Temp"><br>
+    <button onclick="cToF()">fahrenheit</button>
+    <button onclick="fToC()">celsius</button>
+
+
+   <div class="result"><p id="result">RESULT</p></div>
+    
+</center>
+    <script>
+        function cToF(celsius) 
+{
+  var cTemp = document.getElementById("Temp").value;
+  var cToFahr = cTemp * 9 / 5 + 32;
+  var message = cTemp+" \xB0C is " + cToFahr + " \xB0F. ";
+    document.getElementById("result").innerHTML = message;
+}
+
+function fToC(fahrenheit) 
+{
+  var fTemp = document.getElementById("Temp").value;
+  var fToCel = (fTemp - 32) * 5 / 9;
+  var message = fTemp+" \xB0F is " + fToCel + " \xB0C. ";
+  document.getElementById("result").innerHTML = message;
+} 
+
+        </script>
+</body>
+</html>
